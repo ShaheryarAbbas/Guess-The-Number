@@ -1,0 +1,21 @@
+<button id="game-button" onclick="playGame()">Play the Game</button>
+<script>
+    function playGame() {
+  // Generate a random number between 1 and 10
+  let randomNumber = Math.floor(Math.random() * 10) + 1;
+
+  // Prompt the user to guess the number
+  let guess = prompt("I'm thinking of a number between 1 and 10. What is it?");
+
+  // Convert the user's guess to a number
+  guess = Number(guess);
+
+  // Check if the guess is correct
+  if (guess === randomNumber) {
+    alert("Congratulations, you guessed the number!");
+  } else {
+    alert("Sorry, the number was " + randomNumber);
+  }
+}
+
+</script>
